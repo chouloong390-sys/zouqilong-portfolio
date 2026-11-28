@@ -23,7 +23,7 @@ jobs:
           mkdir -p _site
           cp -R index.html app.js styles.css assets media .nojekyll _site/
           test -s _site/assets/photos/photo-18.jpg
-          test "$(find _site/media -name index.m3u8 | wc -l)" -eq 22
+          test "$(find _site/media -name index.m3u8 | wc -l)" -eq 25
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
